@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scripts</title>
+    <link rel="stylesheet" href="dicas.css">
+</head>
+<body>
+
+    <h3>Modelos de scripts</h3>
+    
+    <hr>
+
+    <pre>
+        #!/bin/bash 
+
+        clear;echo;echo
+
+        for i in $(cat input_file.txt)
+            do
+                echo $i
+            done
+
+        echo;echo
+    </pre>
+
+    <hr>
+
+    <pre>
+        #!/bin/bash 
+
+        clear;echo;echo
+
+        for i in $(cat input_file.txt)
+            do
+                sed -i "/$i/ s/.*/___&/" output_file.txt
+            done
+            
+        echo;echo
+    </pre>
+
+    <hr>
+
+
+
+</body>
+</html>

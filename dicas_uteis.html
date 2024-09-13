@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas uteis</title>
+    <link rel="stylesheet" href="dicas.css">
+
+</head>
+<body>
+      
+    <h4>Interface name eth0</h4>
+    <code>
+        <strong><strong>root@home:~</strong></strong> sed -i.original '/^GRUB_CMDLINE_LINUX=/ s/""/"net.ifnames=0"/' /etc/default/grub; update-grub
+    </code>
+
+    <h4>Desabilitar ipv6</h4>
+    <code>
+        <strong>root@home:~</strong> sed -i.original '$ a #\nnet.ipv6.conf.all.disable_ipv6 = 1\n' /etc/sysctl.conf; sysctl -p
+    </code>
+
+    <h4>Desabilitar NetworkManager</h4>
+        <code>
+            <strong>root@home:~</strong> systemctl stop NetworkManager.service <br>
+            <strong>root@home:~</strong> systemctl disable NetworkManager.service
+        </code>
+
+    <h4>Comando wget em mbps</h4>
+        <code>
+            <strong>root@home:~</strong> wget --report-speed=bits
+        </code>
+
+    <h4>Desabilitar apt-daily.timer</h4>
+        <code>
+            <strong>root@home:~</strong> systemctl disable apt-daily.timer <br>
+            <strong>root@home:~</strong> systemctl disable apt-daily-upgrade.timer
+        </code>
+        
+    <h4>Permitir gdm root login</h4>
+        <code>
+            <strong>root@home:~</strong> sed -i.original '/quiet_success/ s/.*/# &/' /etc/pam.d/gdm-password
+        </code>
+
+    <h4>Permitir ssh root login</h4>
+        <code>
+            <strong>root@home:~</strong> sed -i.original '/#PermitRootLogin/ s/#//; s/prohibit-password/yes/' /etc/ssh/sshd_config
+        </code>
+
+
+   <h4>Permitir ssh apenas em ipv4</h4>
+        <code>
+            <strong>root@home:~</strong> sed -i.original '/^#ListenAddress 0.0.0.0/ s/#//' /etc/ssh/sshd_config
+        </code>
+    
+    <h4>Configurar link aggregation</h4>
+        <code>
+            <strong>root@home:~</strong> apt install ifenslave<br>
+            <strong>root@home:~</strong> nano /etc/network/interfaces falta!!
+        </code>
+
+    <h4>Obter mac address</h4>
+        <code>
+            <strong>root@home:~</strong> apt install moreutils <br>
+            <strong>root@home:~</strong> ifdata -ph eth0
+        </code>
+
+    <h4>Recuperar grub</h4>
+        <code>
+            <strong>root@home:~</strong> apt install grub2 <br>
+            <strong>root@home:~</strong> fdisk -l /dev/sda <br>
+            <strong>root@home:~</strong> mount /dev/sda3 /mount <br>
+            <strong>root@home:~</strong> grub-install --root-directory=/mnt /dev/sda
+        </code>
+        
+    <h4>Resolução modo texto</h4>
+        <code>
+            <strong>root@home:~</strong> sed -i.original '/GFXMODE/ s/^#//; s/640x480/800x600/' /etc/default/grub
+        </code>
+
+    <h4>GitLab</h4>
+        <code>
+            <strong>root@home:~</strong> git clone git@gitlab.com:SygTube/curso_html.git <br>
+            <strong>root@home:~</strong> git clone https://gitlab.com/SygTube/curso_html.git
+        </code>
+
+    <h4>Bash '$IFS'</h4>
+        <code>
+            <strong>root@home:~</strong> IFS=$'\n'
+        </code>
+
+    <h4>Bash loop for</h4>
+        <code>
+            <strong>root@home:~</strong> for i in {00..100} <br>
+            <strong>root@home:~</strong> for i in {00..100..2} <br><br>
+            <strong>root@home:~</strong> for i in {100..00} <br>
+            <strong>root@home:~</strong> for i in {100..00..2} 
+        </code>
+    
+    <h4>HP 1920 cli</h4>
+        <code>
+            Patch Panel 02 Ponto 11 - Switch 01 - Porta 21 <br>
+            Patch Panel 09 Ponto 11 - Switch 05 - Porta 22 
+        </code>
+
+
+    <h4>HP 1920 cli</h4>
+        <code>
+            _cmdline-mode on <br>
+            Jinhua1920unauthorized ou 512900
+        </code>
+
+
+    <h4>SSH Grandstream GXP1405</h4>
+        <code>
+        	ssh -v -o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group14-sha1 admin@10.255.2.4
+        </code>
+
+
+
+
+
+
+
+        
+</body>
+</html>
