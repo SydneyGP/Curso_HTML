@@ -1,50 +1,50 @@
 ## Curso HTML
 ```
-git clone git@gitlab.com:SydneyGP/Curso_HTML.git
+git clone git@github.com:SydneyGP/Curso_HTML.git
 ```
 
 ## Estrutura de Dados
 ```
-git clone git@gitlab.com:SydneyGP/Estrutura_de_Dados.git
+git clone git@github.com:SydneyGP/Estrutura_de_Dados.git
 ```
 
 ## KeePassXC
 ```
-git clone git@gitlab.com:SydneyGP/KeePassXC.git
+git clone git@github.com:SydneyGP/KeePassXC.git
 ```
 
 ## Linguagem C
 ```
-git clone git@gitlab.com:SydneyGP/Linguagem_C.git
+git clone git@github.com:SydneyGP/Linguagem_C.git
 ```
 
 ## NetBox
 ```
-git clone git@gitlab.com:SydneyGP/NetBox.git
+git clone git@github.com:SydneyGP/NetBox.git
 ```
 
 ## Others
 ```
-git clone git@gitlab.com:SydneyGP/Others.git
+git clone git@github.com:SydneyGP/Others.git
 ```
 
 ## pfSense
 ```
-git clone git@gitlab.com:SydneyGP/pfSense.git
+git clone git@github.com:SydneyGP/pfSense.git
 ```
 
 ## Python3
 ```
-git clone git@gitlab.com:SydneyGP/Python3.git
+git clone git@github.com:SydneyGP/Python3.git
 ```
 
 ## Shell Scripts
 ```
-git clone git@gitlab.com:SydneyGP/Shell_Scripts.git
+git clone git@github.com:SydneyGP/Shell_Scripts.git
 ```
 
 ## sysPass
 ```
-git clone git@gitlab.com:SydneyGP/sysPass.git
+git clone git@github.com:SydneyGP/sysPass.git
 ```
 
